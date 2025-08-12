@@ -8,8 +8,6 @@ with full CRUD operations. Perfect for learning REST API development and MCP ser
 Good news, everyone! This API lets you manage quotes from your favorite Futurama characters.
 Bite my shiny metal API! 🤖
 
-Author: GitHub Copilot 🤖
-Date: 2025-01-11
 """
 
 from flask import Flask, request, jsonify, render_template
