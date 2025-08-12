@@ -1,0 +1,443 @@
+{% extends "base.html" %}
+
+{% block title %}Futurama Quotes Database - Year 3000{% endblock %}
+
+{% block content %}
+<!-- Main Quotes Section -->
+<section class="section">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-12">
+                <div class="has-text-centered mb-6">
+                    <h2 class="title is-2 has-text-white futurama-title">
+                        <i class="fas fa-comments futurama-orange"></i>
+                        Quote Collection
+                    </h2>
+                    <p class="subtitle has-text-light">
+                        Explore memorable quotes from your favorite Planet Express crew members
+                    </p>
+                </div>
+                
+                <!-- Search and Filter Controls -->
+                <div class="box bg-gradient mb-6">
+                    <div class="columns is-vcentered">
+                        <div class="column is-8">
+                            <div class="field has-addons">
+                                <div class="control has-icons-left is-expanded">
+                                    <input class="input" type="text" placeholder="Search quotes, characters, or episodes..." id="search-input">
+                                    <span class="icon is-left">
+                                        <i class="fas fa-search"></i>
+                                    </span>
+                                </div>
+                                <div class="control">
+                                    <button class="button is-primary">
+                                        <span class="icon"><i class="fas fa-search"></i></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-4">
+                            <div class="field">
+                                <div class="control">
+                                    <div class="select is-fullwidth">
+                                        <select id="character-filter">
+                                            <option value="">All Characters</option>
+                                            <option value="Bender">Bender</option>
+                                            <option value="Fry">Fry</option>
+                                            <option value="Professor Farnsworth">Professor Farnsworth</option>
+                                            <option value="Dr. Zoidberg">Dr. Zoidberg</option>
+                                            <option value="Leela">Leela</option>
+                                            <option value="Amy Wong">Amy Wong</option>
+                                            <option value="Hermes Conrad">Hermes Conrad</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quotes Grid -->
+                <div id="quotes-container" class="columns is-multiline">
+                    <!-- Quotes will be loaded here by JavaScript -->
+                    <div class="column is-12 has-text-centered py-6">
+                        <div class="loading-spinner mx-auto mb-4"></div>
+                        <p class="has-text-white futurama-title">
+                            Loading quotes from the year 3000...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quick Stats Section -->
+<section class="section has-background-dark">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="box bg-gradient has-text-centered">
+                    <h3 class="title is-4 has-text-white futurama-title mb-5">
+                        <i class="fas fa-chart-bar futurama-orange"></i>
+                        Database Statistics
+                    </h3>
+                    <div class="columns">
+                        <div class="column">
+                            <div class="has-text-centered">
+                                <span class="icon is-large has-text-primary">
+                                    <i class="fas fa-quote-left fa-2x"></i>
+                                </span>
+                                <p class="title is-3 has-text-white mt-2" id="stats-quotes">-</p>
+                                <p class="subtitle has-text-light">Total Quotes</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="has-text-centered">
+                                <span class="icon is-large futurama-orange">
+                                    <i class="fas fa-users fa-2x"></i>
+                                </span>
+                                <p class="title is-3 has-text-white mt-2" id="stats-characters">-</p>
+                                <p class="subtitle has-text-light">Characters</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="has-text-centered">
+                                <span class="icon is-large has-text-info">
+                                    <i class="fas fa-tv fa-2x"></i>
+                                </span>
+                                <p class="title is-3 has-text-white mt-2" id="stats-episodes">-</p>
+                                <p class="subtitle has-text-light">Episodes</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="has-text-centered">
+                                <span class="icon is-large has-text-success">
+                                    <i class="fas fa-calendar-alt fa-2x"></i>
+                                </span>
+                                <p class="title is-3 has-text-white mt-2">1999</p>
+                                <p class="subtitle has-text-light">Since</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- API Information Section -->
+<section class="section">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-10">
+                <div class="box bg-gradient">
+                    <h3 class="title is-4 has-text-white futurama-title mb-5">
+                        <i class="fas fa-code futurama-orange"></i>
+                        API Integration
+                    </h3>
+                    <div class="columns">
+                        <div class="column is-6">
+                            <h4 class="title is-5 has-text-white">REST API Endpoints</h4>
+                            <div class="content has-text-light">
+                                <ul>
+                                    <li><code>GET /api/quotes</code> - List all quotes</li>
+                                    <li><code>GET /api/quotes/{id}</code> - Get specific quote</li>
+                                    <li><code>POST /api/quotes</code> - Create new quote</li>
+                                    <li><code>PUT /api/quotes/{id}</code> - Update quote</li>
+                                    <li><code>DELETE /api/quotes/{id}</code> - Delete quote</li>
+                                </ul>
+                            </div>
+                            <a href="/api/quotes" target="_blank" class="button is-primary">
+                                <span class="icon"><i class="fas fa-external-link-alt"></i></span>
+                                <span>View API</span>
+                            </a>
+                        </div>
+                        <div class="column is-6">
+                            <h4 class="title is-5 has-text-white">MCP Server Integration</h4>
+                            <div class="content has-text-light">
+                                <p>This API includes MCP (Model Context Protocol) support for AI integration:</p>
+                                <ul>
+                                    <li>✅ AI-ready quote management tools</li>
+                                    <li>✅ Structured data for language models</li>
+                                    <li>✅ Real-time CRUD operations</li>
+                                    <li>✅ Type-safe parameter validation</li>
+                                </ul>
+                            </div>
+                            <a href="/health" target="_blank" class="button is-info">
+                                <span class="icon"><i class="fas fa-heartbeat"></i></span>
+                                <span>Health Check</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block modals %}
+<!-- Add Quote Modal -->
+<div class="modal" id="add-quote-modal">
+    <div class="modal-background" onclick="closeModal('add-quote-modal')"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">
+                <i class="fas fa-plus-circle futurama-orange mr-2"></i>
+                Add New Futurama Quote
+            </p>
+            <button class="delete" aria-label="close" onclick="closeModal('add-quote-modal')"></button>
+        </header>
+        <section class="modal-card-body">
+            <form id="add-quote-form" onsubmit="handleAddQuoteSubmit(event)">
+                <div class="field">
+                    <label class="label">Quote Text *</label>
+                    <div class="control">
+                        <textarea 
+                            class="textarea" 
+                            name="text" 
+                            id="quote-text-input"
+                            placeholder="Enter the memorable quote here..."
+                            required
+                            rows="3"
+                        ></textarea>
+                    </div>
+                    <p class="help has-text-light">The actual quote text spoken by the character</p>
+                </div>
+
+                <div class="columns">
+                    <div class="column is-6">
+                        <div class="field">
+                            <label class="label">Character *</label>
+                            <div class="control has-icons-left">
+                                <input 
+                                    class="input" 
+                                    type="text" 
+                                    name="character" 
+                                    placeholder="e.g., Bender, Fry, Professor Farnsworth"
+                                    required
+                                >
+                                <span class="icon is-left">
+                                    <i class="fas fa-user-robot"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-6">
+                        <div class="field">
+                            <label class="label">Episode *</label>
+                            <div class="control has-icons-left">
+                                <input 
+                                    class="input" 
+                                    type="text" 
+                                    name="episode" 
+                                    placeholder="e.g., Space Pilot 3000"
+                                    required
+                                >
+                                <span class="icon is-left">
+                                    <i class="fas fa-tv"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column is-6">
+                        <div class="field">
+                            <label class="label">Season</label>
+                            <div class="control has-icons-left">
+                                <input 
+                                    class="input" 
+                                    type="number" 
+                                    name="season" 
+                                    placeholder="e.g., 1, 2, 3..."
+                                    min="1"
+                                    max="20"
+                                >
+                                <span class="icon is-left">
+                                    <i class="fas fa-list-ol"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-6">
+                        <div class="field">
+                            <label class="label">Year</label>
+                            <div class="control has-icons-left">
+                                <input 
+                                    class="input" 
+                                    type="number" 
+                                    name="year" 
+                                    placeholder="e.g., 1999, 2000..."
+                                    min="1990"
+                                    max="2030"
+                                >
+                                <span class="icon is-left">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <footer class="modal-card-foot">
+            <button class="button is-primary" type="submit" form="add-quote-form">
+                <span class="icon"><i class="fas fa-plus"></i></span>
+                <span>Add Quote</span>
+            </button>
+            <button class="button" onclick="closeModal('add-quote-modal')">Cancel</button>
+        </footer>
+    </div>
+</div>
+
+<!-- Edit Quote Modal -->
+<div class="modal" id="edit-quote-modal">
+    <div class="modal-background" onclick="closeModal('edit-quote-modal')"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">
+                <i class="fas fa-edit futurama-orange mr-2"></i>
+                Edit Futurama Quote
+            </p>
+            <button class="delete" aria-label="close" onclick="closeModal('edit-quote-modal')"></button>
+        </header>
+        <section class="modal-card-body">
+            <form id="edit-quote-form" onsubmit="handleEditQuoteSubmit(event)">
+                <div class="field">
+                    <label class="label">Quote Text *</label>
+                    <div class="control">
+                        <textarea 
+                            class="textarea" 
+                            name="text" 
+                            id="edit-quote-text"
+                            required
+                            rows="3"
+                        ></textarea>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column is-6">
+                        <div class="field">
+                            <label class="label">Character *</label>
+                            <div class="control has-icons-left">
+                                <input 
+                                    class="input" 
+                                    type="text" 
+                                    name="character" 
+                                    id="edit-quote-character"
+                                    required
+                                >
+                                <span class="icon is-left">
+                                    <i class="fas fa-user-robot"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-6">
+                        <div class="field">
+                            <label class="label">Episode *</label>
+                            <div class="control has-icons-left">
+                                <input 
+                                    class="input" 
+                                    type="text" 
+                                    name="episode" 
+                                    id="edit-quote-episode"
+                                    required
+                                >
+                                <span class="icon is-left">
+                                    <i class="fas fa-tv"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column is-6">
+                        <div class="field">
+                            <label class="label">Season</label>
+                            <div class="control has-icons-left">
+                                <input 
+                                    class="input" 
+                                    type="number" 
+                                    name="season" 
+                                    id="edit-quote-season"
+                                    min="1"
+                                    max="20"
+                                >
+                                <span class="icon is-left">
+                                    <i class="fas fa-list-ol"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-6">
+                        <div class="field">
+                            <label class="label">Year</label>
+                            <div class="control has-icons-left">
+                                <input 
+                                    class="input" 
+                                    type="number" 
+                                    name="year" 
+                                    id="edit-quote-year"
+                                    min="1990"
+                                    max="2030"
+                                >
+                                <span class="icon is-left">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <footer class="modal-card-foot">
+            <button class="button is-primary" type="submit" form="edit-quote-form">
+                <span class="icon"><i class="fas fa-save"></i></span>
+                <span>Save Changes</span>
+            </button>
+            <button class="button" onclick="closeModal('edit-quote-modal')">Cancel</button>
+        </footer>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // Update stats when quotes are loaded
+    document.addEventListener('DOMContentLoaded', function() {
+        // Sync stats with main dashboard
+        const observer = new MutationObserver(function() {
+            const mainQuoteCount = document.getElementById('quote-count');
+            const mainCharacterCount = document.getElementById('character-count');
+            const mainEpisodeCount = document.getElementById('episode-count');
+            
+            const statsQuotes = document.getElementById('stats-quotes');
+            const statsCharacters = document.getElementById('stats-characters');
+            const statsEpisodes = document.getElementById('stats-episodes');
+            
+            if (mainQuoteCount && statsQuotes) {
+                statsQuotes.textContent = mainQuoteCount.textContent;
+            }
+            if (mainCharacterCount && statsCharacters) {
+                statsCharacters.textContent = mainCharacterCount.textContent;
+            }
+            if (mainEpisodeCount && statsEpisodes) {
+                statsEpisodes.textContent = mainEpisodeCount.textContent;
+            }
+        });
+        
+        const targetNodes = document.querySelectorAll('#quote-count, #character-count, #episode-count');
+        targetNodes.forEach(node => {
+            if (node) {
+                observer.observe(node, { childList: true, characterData: true, subtree: true });
+            }
+        });
+    });
+</script>
+{% endblock %}
