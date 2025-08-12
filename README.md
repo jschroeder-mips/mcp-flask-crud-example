@@ -1,32 +1,116 @@
-# 📚 Flask CRUD + MCP Server Example
+# � Futurama Quotes CRUD API + MCP Server + Frontend
 
-A comprehensive example demonstrating a Flask REST API with full CRUD operations and an MCP (Model Context Protocol) server for AI integration! Perfect for learning both REST API development and AI tool integration. 🚀
+Welcome to the year 3000! This comprehensive example de## 🤖 MCP Server Tools
+
+The MCP server provides these tools for AI assistants:
+
+- **`list_quotes`** 💬 - Get all Futurama quotes in the collection
+- **`get_quote`** 🔍 - Get details of a specific quote
+- **`create_quote`** ✨ - Add a new quote to the collection
+- **`update_quote`** ✏️ - Update an existing quote's information
+- **`delete_quote`** 🗑️ - Remove a quote from the collection
+- **`health_check`** 🏥 - Check if the API is healthy
+
+## 🧪 Testing MCP Server with AI
+
+### 1. **Direct MCP Client Testing** (Recommended)
+
+The most straightforward way is to use an MCP-compatible AI assistant like **Claude Desktop** or **Cursor**:
+
+#### **Claude Desktop Integration:**
+1. Add your MCP server to Claude Desktop's configuration:
+
+```json
+// ~/Library/Application Support/Claude/claude_desktop_config.json (macOS)
+{
+  "mcpServers": {
+    "futurama-quotes": {
+      "command": "uv",
+      "args": ["run", "python", "/absolute/path/to/your/project/mcp_server/server.py"],
+      "cwd": "/absolute/path/to/your/project"
+    }
+  }
+}
+```
+
+2. Restart Claude Desktop
+3. Ask Claude to use the tools:
+
+```
+Hey Claude, can you list all the Futurama quotes using the MCP tools?
+```
+
+```
+Claude, create a new quote: "Woo! Go Zoidberg!" by Dr. Zoidberg from episode "The Luck of the Fryrish"
+```
+
+### 2. **Testing Individual MCP Tools**
+
+You can test specific MCP tools by asking the AI to:
+
+#### **List Quotes:**
+```
+"Use the list_quotes tool to show me all available Futurama quotes"
+```
+
+#### **Get Specific Quote:**
+```
+"Use the get_quote tool to get details for quote ID 1"
+```
+
+#### **Create New Quote:**
+```
+"Use the create_quote tool to add this quote: 'Good news everyone! I've invented a device that makes you read this in my voice!' by Professor Farnsworth from episode 'The Farnsworth Parabox'"
+```
+
+#### **Update Quote:**
+```
+"Use the update_quote tool to change quote ID 2 to have the text 'Great news everyone!'"
+```
+
+#### **Health Check:**
+```
+"Use the health_check tool to verify the Futurama quotes API is working"
+```
+
+### 3. **Sample AI Conversation Flow**
+
+Here's what a typical AI testing session would look like:
+
+```
+Human: "Can you help me manage some Futurama quotes using the MCP tools?"
+
+AI: "I can help you with that! Let me start by checking what quotes are available."
+    *Uses list_quotes tool*
+    "I found 5 Futurama quotes in the collection:
+    1. 'Bite my shiny metal ass!' - Bender
+    2. 'Good news everyone!' - Professor Farnsworth
+    ..." a Flask REST API for managing Futurama quotes with full CRUD operations, an MCP (Model Context Protocol) server for AI integration, and a simple themed frontend! Perfect for learning REST API development, AI tool integration, and web development. Good news everyone! 🤖
 
 ## 🎯 What You'll Learn
 
-- **Flask REST API Development** - Build a complete CRUD API with proper error handling
-- **MCP Server Implementation** - Create tools for AI assistants to interact with your API
-- **API Design Best Practices** - Proper HTTP status codes, JSON responses, and documentation
-- **Python Best Practices** - PEP8 compliance, type hints, and comprehensive documentation
-- **Testing Strategies** - Unit tests for both API and MCP server components
+- **Flask REST API Development** - Build a complete CRUD API with proper error handling and Futurama theming
+- **MCP Server Implementation** - Create tools for AI assistants to interact with your API from the year 3000
+- **Frontend Development** - Simple but styled HTML/CSS/JavaScript interface
+- **API Design Best Practices** - Proper HTTP status codes, JSON responses, and comprehensive documentation
+- **Python Best Practices** - PEP8 compliance, type hints, and professional development standards
+- **UV Package Management** - Modern Python package management instead of pip
+- **Testing Strategies** - Comprehensive unit tests for both API and MCP server components
 
 ## 🏗️ Project Structure
 
 ```
 📁 mcp-flask-crud-example/
 ├── 📋 README.md                   # You are here! 👋
-├── 📦 requirements.txt            # Python dependencies
-├── 🚀 setup_and_run.py           # Easy setup script
-├── 🌐 flask_api/
+├── ⚙️ pyproject.toml              # UV project configuration
+├── 🚀 futurama_api/
 │   ├── 📄 __init__.py
-│   └── 🎯 app.py                  # Main Flask CRUD API
+│   └── 🎯 app.py                  # Main Flask CRUD API for Futurama quotes
 ├── 🤖 mcp_server/
 │   ├── 📄 __init__.py
 │   └── 🛠️ server.py              # MCP server implementation
 ├── 🧪 tests/
-│   ├── 📄 __init__.py
-│   ├── 🌐 test_api.py            # API tests
-│   └── 🤖 test_mcp.py            # MCP server tests
+│   └── 🌐 tests_test_api.py      # Comprehensive API tests
 └── 📚 examples/
     ├── 🌐 api_examples.py         # API usage examples
     └── 🤖 mcp_examples.py         # MCP usage examples
@@ -34,78 +118,98 @@ A comprehensive example demonstrating a Flask REST API with full CRUD operations
 
 ## 🚀 Quick Start
 
-### 1. Clone and Setup
+### 1. Clone and Setup with UV
+
 ```bash
 # Clone the repository
 git clone https://github.com/jschroeder-mips/mcp-flask-crud-example.git
 cd mcp-flask-crud-example
 
-# Create virtual environment
-python -m venv venv
+# Install UV (if not already installed)
+curl -LsSf https://astral.sh/uv/install.sh | sh
 
-# Activate virtual environment
-# On Windows:
-venv\Scripts\activate
-# On macOS/Linux:
-source venv/bin/activate
-
-# Install dependencies
-pip install -r requirements.txt
+# Install dependencies and create virtual environment
+uv sync
 ```
 
 ### 2. Run the Flask API 🌐
+
 ```bash
-# Start the Flask API server
-python flask_api/app.py
+# Activate the virtual environment and start the Flask API
+uv run python futurama_api/app.py
+
+# Or use the project script
+uv run futurama-api
 
 # The API will be available at:
-# http://localhost:5000
+# Frontend: http://localhost:5000/
+# API: http://localhost:5000/api/quotes
 ```
 
 ### 3. Test the API 🧪
+
 ```bash
 # In a new terminal, test the API
 curl http://localhost:5000/health
-curl http://localhost:5000/books
+curl http://localhost:5000/api/quotes
+
+# Or open the frontend in your browser:
+# http://localhost:5000/
 ```
 
 ### 4. Run the MCP Server 🤖
+
 ```bash
 # In another terminal (keep Flask running!)
-python mcp_server/server.py
+uv run python mcp_server/server.py
+
+# Or use the project script
+uv run futurama-mcp
 ```
 
-## 📚 API Endpoints
+## � API Endpoints
 
-Our Books API provides these endpoints:
+Our Futurama Quotes API provides these endpoints:
 
 | Method | Endpoint | Description | Example |
 |--------|----------|-------------|---------|
+| `GET` | `/` | 🎨 Frontend interface | Open in browser |
 | `GET` | `/health` | 🏥 Health check | `curl http://localhost:5000/health` |
-| `GET` | `/books` | 📚 List all books | `curl http://localhost:5000/books` |
-| `GET` | `/books/{id}` | 🔍 Get specific book | `curl http://localhost:5000/books/1` |
-| `POST` | `/books` | ✨ Create new book | `curl -X POST -H "Content-Type: application/json" -d '{"title":"New Book","author":"Author Name","year":2024}' http://localhost:5000/books` |
-| `PUT` | `/books/{id}` | ✏️ Update book | `curl -X PUT -H "Content-Type: application/json" -d '{"title":"Updated Title"}' http://localhost:5000/books/1` |
-| `DELETE` | `/books/{id}` | 🗑️ Delete book | `curl -X DELETE http://localhost:5000/books/1` |
+| `GET` | `/api/quotes` | � List all quotes | `curl http://localhost:5000/api/quotes` |
+| `GET` | `/api/quotes/{id}` | 🔍 Get specific quote | `curl http://localhost:5000/api/quotes/1` |
+| `POST` | `/api/quotes` | ✨ Create new quote | `curl -X POST -H "Content-Type: application/json" -d '{"text":"Bite my shiny metal ass!","character":"Bender","episode":"Test"}' http://localhost:5000/api/quotes` |
+| `PUT` | `/api/quotes/{id}` | ✏️ Update quote | `curl -X PUT -H "Content-Type: application/json" -d '{"text":"Updated quote"}' http://localhost:5000/api/quotes/1` |
+| `DELETE` | `/api/quotes/{id}` | 🗑️ Delete quote | `curl -X DELETE http://localhost:5000/api/quotes/1` |
+
+## 🎨 Frontend Features
+
+The included frontend provides:
+
+- **Futurama-themed styling** - Dark space theme with green terminal colors
+- **Full CRUD operations** - Add, edit, update, and delete quotes
+- **Real-time updates** - Automatically refreshes the quote list
+- **Responsive design** - Works on desktop and mobile
+- **Input validation** - Client-side form validation
+- **Status messages** - User feedback for all operations
 
 ## 🤖 MCP Server Tools
 
 The MCP server provides these tools for AI assistants:
 
-- **`list_books`** 📚 - Get all books in the collection
-- **`get_book`** 🔍 - Get details of a specific book
-- **`create_book`** ✨ - Add a new book to the collection
-- **`update_book`** ✏️ - Update an existing book's information
-- **`delete_book`** 🗑️ - Remove a book from the collection
+- **`list_quotes`** � - Get all Futurama quotes in the collection
+- **`get_quote`** 🔍 - Get details of a specific quote
+- **`create_quote`** ✨ - Add a new quote to the collection
+- **`update_quote`** ✏️ - Update an existing quote's information
+- **`delete_quote`** 🗑️ - Remove a quote from the collection
 - **`health_check`** 🏥 - Check if the API is healthy
 
 ## 💡 Understanding MCP (Model Context Protocol)
 
-MCP is a protocol that allows AI assistants to interact with external services through **tools**. Think of it as a way for AI to call functions in your application!
+MCP is a protocol that allows AI assistants to interact with external services through **tools**. Think of it as a way for AI to call functions in your application from the year 3000!
 
 ### 🔄 How it Works:
 
-1. **AI Assistant** wants to get book information
+1. **AI Assistant** wants to get Futurama quote information
 2. **MCP Server** receives the request and validates parameters
 3. **MCP Server** makes HTTP request to Flask API
 4. **Flask API** processes the request and returns data
@@ -115,7 +219,7 @@ MCP is a protocol that allows AI assistants to interact with external services t
 ### 🎯 Benefits:
 
 - **Structured Communication** - Defined interfaces between AI and services
-- **Type Safety** - Parameter validation and error handling
+- **Type Safety** - Parameter validation and error handling with Pydantic
 - **Better Integration** - AI can interact with any service through MCP
 - **Standardization** - Consistent way to expose functionality to AI
 
@@ -126,22 +230,23 @@ MCP is a protocol that allows AI assistants to interact with external services t
 ```python
 import requests
 
-# Get all books
-response = requests.get('http://localhost:5000/books')
-books = response.json()
-print(f"Found {books['count']} books! 📚")
+# Get all quotes
+response = requests.get('http://localhost:5000/api/quotes')
+quotes = response.json()
+print(f"Found {quotes['count']} quotes from the year 3000! �")
 
-# Create a new book
-new_book = {
-    "title": "Python Tricks",
-    "author": "Dan Bader", 
-    "year": 2017,
-    "isbn": "978-1775093305"
+# Create a new quote
+new_quote = {
+    "text": "I'm back, baby!",
+    "character": "Bender", 
+    "episode": "Rebirth",
+    "season": 6,
+    "year": 2010
 }
 
-response = requests.post('http://localhost:5000/books', json=new_book)
-created_book = response.json()
-print(f"Created: {created_book['book']['title']} ✨")
+response = requests.post('http://localhost:5000/api/quotes', json=new_quote)
+created_quote = response.json()
+print(f"Created: {created_quote['quote']['text']} by {created_quote['quote']['character']} ✨")
 ```
 
 ### 🤖 Understanding MCP Tools
@@ -149,39 +254,110 @@ print(f"Created: {created_book['book']['title']} ✨")
 ```python
 # This is what an MCP tool looks like:
 Tool(
-    name="create_book",
-    description="✨ Create a new book in the collection",
+    name="create_quote",
+    description="✨ Create a new Futurama quote in the collection",
     inputSchema={
         "type": "object",
         "properties": {
-            "title": {"type": "string", "description": "Book title"},
-            "author": {"type": "string", "description": "Book author"},
-            "year": {"type": "integer", "description": "Publication year"}
+            "text": {"type": "string", "description": "The quote text"},
+            "character": {"type": "string", "description": "Character who said it"},
+            "episode": {"type": "string", "description": "Episode name"}
         },
-        "required": ["title", "author", "year"]
+        "required": ["text", "character", "episode"]
     }
 )
 ```
+
+### 4. **Advanced MCP Testing**
+
+For more comprehensive testing, you can also:
+
+#### **Test Integration Script:**
+Run our included integration test:
+```bash
+uv run python test_mcp_integration.py
+```
+
+#### **Manual MCP Server Testing:**
+1. Start the Flask API: `uv run python futurama_api/app.py`
+2. Start the MCP server: `uv run python mcp_server/server.py`
+3. Connect your AI assistant and try commands like:
+   - "Create a quote by Amy Wong"
+   - "Update quote 3 to be more exciting"
+   - "Delete the least funny quote"
+   - "Show me all quotes by Bender"
+
+#### **Common AI Test Prompts:**
+```
+"Can you help me organize my Futurama quote collection? Start by showing me what's available."
+
+"I want to add some quotes from the Professor. Can you create a few new ones?"
+
+"Let's clean up the collection - can you find and update any quotes that seem incomplete?"
+
+"Show me the health status of the quotes API, then give me a random quote."
+```
+
+### 5. **Troubleshooting MCP with AI**
+
+If your AI assistant can't see the MCP tools:
+- ✅ Ensure both Flask API and MCP server are running
+- ✅ Check the configuration file path is correct
+- ✅ Restart your AI assistant after configuration changes
+- ✅ Verify the MCP server logs show "MCP server is starting up!"
 
 ## 🧪 Running Tests
 
 ```bash
 # Run all tests
-python -m pytest tests/ -v
-
-# Run only API tests
-python -m pytest tests/test_api.py -v
-
-# Run only MCP tests  
-python -m pytest tests/test_mcp.py -v
+uv run pytest tests/ -v
 
 # Run tests with coverage
-python -m pytest tests/ --cov=flask_api --cov=mcp_server
+uv run pytest tests/ --cov=futurama_api --cov=mcp_server
+
+# Run only API tests
+uv run pytest tests/tests_test_api.py -v
+
+# Run in watch mode during development
+uv run pytest tests/ --watch
+```
+
+## 🛠️ Development
+
+### Code Quality Tools
+
+The project includes modern Python development tools:
+
+```bash
+# Format code with Black
+uv run black futurama_api/ mcp_server/ tests/
+
+# Lint with Ruff
+uv run ruff check futurama_api/ mcp_server/ tests/
+
+# Type checking with MyPy
+uv run mypy futurama_api/ mcp_server/
+
+# Install pre-commit hooks
+uv run pre-commit install
+```
+
+### Adding Dependencies
+
+```bash
+# Add a new dependency
+uv add requests
+
+# Add a development dependency
+uv add --dev pytest-cov
+
+# Remove a dependency
+uv remove requests
 ```
 
 ## 🛠️ Development Tips
 
-### 🐛 Common Issues & Solutions
+## 🐛 Common Issues & Solutions
 
 1. **Port Already in Use** 🚫
    ```bash
@@ -197,43 +373,27 @@ python -m pytest tests/ --cov=flask_api --cov=mcp_server
    - Verify port 5000 is accessible
 
 3. **Import Errors** 📦
-   - Activate your virtual environment
-   - Install dependencies: `pip install -r requirements.txt`
+   - Ensure UV virtual environment is activated: `uv shell`
+   - Reinstall dependencies: `uv sync`
 
-### ✨ Extending the Code
+## ✨ Sample Quotes Included
 
-**Add New Fields to Books:**
-```python
-# In flask_api/app.py, update the Book class:
-class Book:
-    def __init__(self, book_id, title, author, year, isbn=None, genre=None):
-        # ... existing code ...
-        self.genre = genre
-```
+The API comes pre-loaded with classic Futurama quotes:
 
-**Add New MCP Tools:**
-```python
-# In mcp_server/server.py, add to list_tools():
-Tool(
-    name="search_books",
-    description="🔍 Search books by title or author",
-    inputSchema={
-        "type": "object",
-        "properties": {
-            "query": {"type": "string", "description": "Search query"}
-        },
-        "required": ["query"]
-    }
-)
-```
+- "Bite my shiny metal ass!" - Bender
+- "Good news everyone!" - Professor Farnsworth  
+- "Shut up and take my money!" - Fry
+- "Why not Zoidberg?" - Dr. Zoidberg
+- "I'm going to build my own theme park, with blackjack and hookers!" - Bender
 
 ## 📚 Learning Resources
 
 - **Flask Documentation** - https://flask.palletsprojects.com/
 - **MCP Specification** - https://spec.modelcontextprotocol.io/
+- **UV Documentation** - https://docs.astral.sh/uv/
 - **REST API Best Practices** - https://restfulapi.net/
 - **Python Type Hints** - https://docs.python.org/3/library/typing.html
-- **Pydantic Validation** - https://pydantic-docs.helpmanual.io/
+- **Pydantic Validation** - https://docs.pydantic.dev/
 
 ## 🤝 Contributing
 
@@ -242,21 +402,26 @@ Found a bug? Want to add features? Contributions welcome!
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature-name`
 3. Make your changes and add tests
-4. Run tests: `python -m pytest`
-5. Submit a pull request! 🚀
+4. Run tests: `uv run pytest`
+5. Format code: `uv run black .`
+6. Submit a pull request! 🚀
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 🎉 Acknowledgments
 
 - Built with ❤️ for learning and teaching
-- Inspired by the need for practical MCP examples
-- Perfect for junior developers starting their journey! 🌟
+- Inspired by the amazing show Futurama
+- Perfect for developers learning modern Python development! 🌟
+- Uses UV for fast, reliable dependency management
+- Demonstrates professional Python project structure
 
 ---
 
-**Happy Coding!** 🚀📚🤖
+**Good news everyone! Happy Coding from the year 3000!** 🚀�🤖
 
 If you have questions or need help, feel free to open an issue or reach out!
+
+*"Bite my shiny metal API!"* - Bender 🤖
