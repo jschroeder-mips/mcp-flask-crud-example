@@ -8,8 +8,6 @@ to interact with our Futurama Quotes API. It's like a bridge between AI and the 
 Perfect for learning how to build MCP servers and integrate with REST APIs.
 Good news everyone! This server makes it easy to manage Futurama quotes with AI!
 
-Author: GitHub Copilot 🤖  
-Date: 2025-01-11
 """
 
 import asyncio
