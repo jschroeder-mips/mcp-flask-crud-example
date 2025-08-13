@@ -1,427 +1,421 @@
-# � Futurama Quotes CRUD API + MCP Server + Frontend
+# Futurama Quotes API with MCP Server
 
-Welcome to the year 3000! This comprehensive example de## 🤖 MCP Server Tools
+A complete CRUD application featuring a Flask REST API for managing Futurama quotes and an MCP (Model Context Protocol) server that provides AI-friendly access to the API.
 
-The MCP server provides these tools for AI assistants:
+## 🚀 Features
 
-- **`list_quotes`** 💬 - Get all Futurama quotes in the collection
-- **`get_quote`** 🔍 - Get details of a specific quote
-- **`create_quote`** ✨ - Add a new quote to the collection
-- **`update_quote`** ✏️ - Update an existing quote's information
-- **`delete_quote`** 🗑️ - Remove a quote from the collection
-- **`health_check`** 🏥 - Check if the API is healthy
+- **RESTful Flask API** with full CRUD operations
+- **MCP Server** for AI assistant integration
+- **In-memory data storage** with sample Futurama quotes
+- **CORS enabled** for frontend integration
+- **Comprehensive error handling** and logging
+- **Docker-ready** setup scripts
 
-## 🧪 Testing MCP Server with AI
+## 📋 Table of Contents
 
-### 1. **Direct MCP Client Testing** (Recommended)
+- [Quick Start](#quick-start)
+- [Project Structure](#project-structure)
+- [API Documentation](#api-documentation)
+- [MCP Server Documentation](#mcp-server-documentation)
+- [Installation & Setup](#installation--setup)
+- [Usage Examples](#usage-examples)
+- [Development](#development)
+- [Contributing](#contributing)
 
-The most straightforward way is to use an MCP-compatible AI assistant like **Claude Desktop** or **Cursor**:
+## 🚀 Quick Start
 
-#### **Claude Desktop Integration:**
-1. Add your MCP server to Claude Desktop's configuration:
+1. **Clone and setup:**
+   ```bash
+   git clone <repository-url>
+   cd mcp-flask-crud-example
+   ./setup.sh
+   ```
+
+2. **Start the Flask API:**
+   ```bash
+   python futurama_api/app.py
+   ```
+
+3. **Start the MCP Server (in another terminal):**
+   ```bash
+   ./run_mcp_server.sh
+   ```
+
+4. **Test the API:**
+   ```bash
+   curl http://localhost:5000/health
+   curl http://localhost:5000/api/quotes
+   ```
+
+## 📁 Project Structure
+
+```
+mcp-flask-crud-example/
+├── futurama_api/           # Flask REST API
+│   ├── __init__.py
+│   └── app.py             # Main Flask application
+├── mcp_server/            # MCP Server for AI integration
+│   ├── __init__.py
+│   └── server.py          # MCP server implementation
+├── requirements.txt       # Python dependencies
+├── setup.sh              # Automated setup script
+├── run_mcp_server.sh     # MCP server launcher
+└── README.md             # This file
+```
+
+## 🔧 API Documentation
+
+### Base URL
+```
+http://localhost:5000
+```
+
+### Health Check
+```http
+GET /health
+```
+
+**Response:**
+```json
+{
+    "status": "healthy",
+    "message": "Futurama Quotes API is running"
+}
+```
+
+### Quotes Endpoints
+
+#### Get All Quotes
+```http
+GET /api/quotes
+```
+
+**Response:**
+```json
+{
+    "count": 4,
+    "quotes": [
+        {
+            "id": 1,
+            "text": "Bite my shiny metal ass!",
+            "character": "Bender",
+            "episode": "A Fishful of Dollars",
+            "created_at": "2025-08-13T10:30:00"
+        }
+    ]
+}
+```
+
+#### Get Quote by ID
+```http
+GET /api/quotes/{id}
+```
+
+**Response:**
+```json
+{
+    "id": 1,
+    "text": "Bite my shiny metal ass!",
+    "character": "Bender",
+    "episode": "A Fishful of Dollars",
+    "created_at": "2025-08-13T10:30:00"
+}
+```
+
+#### Create New Quote
+```http
+POST /api/quotes
+Content-Type: application/json
+
+{
+    "text": "I'm gonna build my own theme park!",
+    "character": "Bender",
+    "episode": "Godfellas"
+}
+```
+
+**Response:**
+```json
+{
+    "id": 5,
+    "text": "I'm gonna build my own theme park!",
+    "character": "Bender",
+    "episode": "Godfellas",
+    "created_at": "2025-08-13T11:45:00"
+}
+```
+
+#### Update Quote
+```http
+PUT /api/quotes/{id}
+Content-Type: application/json
+
+{
+    "text": "Updated quote text",
+    "character": "Updated character"
+}
+```
+
+#### Delete Quote
+```http
+DELETE /api/quotes/{id}
+```
+
+**Response:**
+```json
+{
+    "message": "Quote deleted successfully"
+}
+```
+
+## 🤖 MCP Server Documentation
+
+The MCP server provides AI assistants with structured access to the Futurama Quotes API through the Model Context Protocol.
+
+### Available MCP Tools
+
+#### `list_quotes`
+- **Description:** Get all Futurama quotes
+- **Parameters:** None
+- **Returns:** Formatted list of all quotes
+
+#### `get_quote`
+- **Description:** Get a specific quote by ID
+- **Parameters:** 
+  - `quote_id` (integer, required): The ID of the quote
+- **Returns:** Detailed quote information
+
+#### `create_quote`
+- **Description:** Create a new quote
+- **Parameters:**
+  - `text` (string, required): Quote text
+  - `character` (string, required): Character name
+  - `episode` (string, required): Episode name
+  - `season` (integer, optional): Season number
+  - `year` (integer, optional): Year
+- **Returns:** Created quote details
+
+#### `update_quote`
+- **Description:** Update an existing quote
+- **Parameters:**
+  - `quote_id` (integer, required): The ID of the quote to update
+  - `text` (string, optional): Updated quote text
+  - `character` (string, optional): Updated character name
+  - `episode` (string, optional): Updated episode name
+  - `season` (integer, optional): Updated season number
+  - `year` (integer, optional): Updated year
+- **Returns:** Updated quote details
+
+#### `delete_quote`
+- **Description:** Delete a quote by ID
+- **Parameters:**
+  - `quote_id` (integer, required): The ID of the quote to delete
+- **Returns:** Deletion confirmation
+
+#### `health_check`
+- **Description:** Check API health status
+- **Parameters:** None
+- **Returns:** API health status
+
+### Installing on Claude Desktop
+
+To use this MCP server with Claude Desktop, follow these steps:
+
+#### 1. Complete Project Setup
+First, ensure the project is properly set up:
+```bash
+git clone <repository-url>
+cd mcp-flask-crud-example
+./setup.sh
+```
+
+#### 2. Find Your Configuration File
+Claude Desktop stores MCP server configurations in a JSON file. The location depends on your operating system:
+
+- **macOS:** `~/Library/Application Support/Claude/claude_desktop_config.json`
+- **Windows:** `%APPDATA%\Claude\claude_desktop_config.json`
+- **Linux:** `~/.config/Claude/claude_desktop_config.json`
+
+#### 3. Configure the MCP Server
+Add the following configuration to your `claude_desktop_config.json` file:
 
 ```json
-// ~/Library/Application Support/Claude/claude_desktop_config.json (macOS)
 {
   "mcpServers": {
     "futurama-quotes": {
-      "command": "uv",
-      "args": ["run", "python", "/absolute/path/to/your/project/mcp_server/server.py"],
-      "cwd": "/absolute/path/to/your/project"
+      "command": "/absolute/path/to/mcp-flask-crud-example/run_mcp_server.sh",
+      "args": [],
+      "env": {}
     }
   }
 }
 ```
 
-2. Restart Claude Desktop
-3. Ask Claude to use the tools:
+**Important:** Replace `/absolute/path/to/mcp-flask-crud-example/` with the actual absolute path to your project directory.
 
-```
-Hey Claude, can you list all the Futurama quotes using the MCP tools?
-```
-
-```
-Claude, create a new quote: "Woo! Go Zoidberg!" by Dr. Zoidberg from episode "The Luck of the Fryrish"
-```
-
-### 2. **Testing Individual MCP Tools**
-
-You can test specific MCP tools by asking the AI to:
-
-#### **List Quotes:**
-```
-"Use the list_quotes tool to show me all available Futurama quotes"
-```
-
-#### **Get Specific Quote:**
-```
-"Use the get_quote tool to get details for quote ID 1"
-```
-
-#### **Create New Quote:**
-```
-"Use the create_quote tool to add this quote: 'Good news everyone! I've invented a device that makes you read this in my voice!' by Professor Farnsworth from episode 'The Farnsworth Parabox'"
-```
-
-#### **Update Quote:**
-```
-"Use the update_quote tool to change quote ID 2 to have the text 'Great news everyone!'"
-```
-
-#### **Health Check:**
-```
-"Use the health_check tool to verify the Futurama quotes API is working"
-```
-
-### 3. **Sample AI Conversation Flow**
-
-Here's what a typical AI testing session would look like:
-
-```
-Human: "Can you help me manage some Futurama quotes using the MCP tools?"
-
-AI: "I can help you with that! Let me start by checking what quotes are available."
-    *Uses list_quotes tool*
-    "I found 5 Futurama quotes in the collection:
-    1. 'Bite my shiny metal ass!' - Bender
-    2. 'Good news everyone!' - Professor Farnsworth
-    ..." a Flask REST API for managing Futurama quotes with full CRUD operations, an MCP (Model Context Protocol) server for AI integration, and a simple themed frontend! Perfect for learning REST API development, AI tool integration, and web development. Good news everyone! 🤖
-
-## 🎯 What You'll Learn
-
-- **Flask REST API Development** - Build a complete CRUD API with proper error handling and Futurama theming
-- **MCP Server Implementation** - Create tools for AI assistants to interact with your API from the year 3000
-- **Frontend Development** - Simple but styled HTML/CSS/JavaScript interface
-- **API Design Best Practices** - Proper HTTP status codes, JSON responses, and comprehensive documentation
-- **Python Best Practices** - PEP8 compliance, type hints, and professional development standards
-- **UV Package Management** - Modern Python package management instead of pip
-- **Testing Strategies** - Comprehensive unit tests for both API and MCP server components
-
-## 🏗️ Project Structure
-
-```
-📁 mcp-flask-crud-example/
-├── 📋 README.md                   # You are here! 👋
-├── ⚙️ pyproject.toml              # UV project configuration
-├── 🚀 futurama_api/
-│   ├── 📄 __init__.py
-│   └── 🎯 app.py                  # Main Flask CRUD API for Futurama quotes
-├── 🤖 mcp_server/
-│   ├── 📄 __init__.py
-│   └── 🛠️ server.py              # MCP server implementation
-├── 🧪 tests/
-│   └── 🌐 tests_test_api.py      # Comprehensive API tests
-└── 📚 examples/
-    ├── 🌐 api_examples.py         # API usage examples
-    └── 🤖 mcp_examples.py         # MCP usage examples
-```
-
-## 🚀 Quick Start
-
-### 1. Clone and Setup with UV
-
+#### 4. Make the Script Executable
+Ensure the run script has execute permissions:
 ```bash
-# Clone the repository
-git clone https://github.com/jschroeder-mips/mcp-flask-crud-example.git
-cd mcp-flask-crud-example
-
-# Install UV (if not already installed)
-curl -LsSf https://astral.sh/uv/install.sh | sh
-
-# Install dependencies and create virtual environment
-uv sync
+chmod +x run_mcp_server.sh
 ```
 
-### 2. Run the Flask API 🌐
-
+#### 5. Start the Flask API
+Before using the MCP server, make sure the Flask API is running:
 ```bash
-# Activate the virtual environment and start the Flask API
-uv run python futurama_api/app.py
-
-# Or use the project script
-uv run futurama-api
-
-# The API will be available at:
-# Frontend: http://localhost:5000/
-# API: http://localhost:5000/api/quotes
+python futurama_api/app.py
 ```
+Keep this running in a separate terminal window.
 
-### 3. Test the API 🧪
+#### 6. Restart Claude Desktop
+After adding the configuration, restart Claude Desktop for the changes to take effect.
 
-```bash
-# In a new terminal, test the API
-curl http://localhost:5000/health
-curl http://localhost:5000/api/quotes
+#### 7. Verify Integration
+In Claude Desktop, you should now be able to:
+- Ask "What Futurama quotes do you have?"
+- Say "Create a new quote by Bender"
+- Request "Show me quote number 2"
+- Ask "Delete quote 3"
 
-# Or open the frontend in your browser:
-# http://localhost:5000/
-```
+The MCP server will automatically handle the communication between Claude and your Flask API.
 
-### 4. Run the MCP Server 🤖
+#### Troubleshooting Claude Desktop Integration
 
-```bash
-# In another terminal (keep Flask running!)
-uv run python mcp_server/server.py
+**If Claude can't connect to the MCP server:**
+1. Check that the path in `claude_desktop_config.json` is absolute and correct
+2. Ensure the Flask API is running on `localhost:5000`
+3. Verify the `run_mcp_server.sh` script has execute permissions
+4. Check Claude Desktop's logs for error messages
+5. Test the MCP server manually: `./run_mcp_server.sh`
 
-# Or use the project script
-uv run futurama-mcp
-```
-
-## � API Endpoints
-
-Our Futurama Quotes API provides these endpoints:
-
-| Method | Endpoint | Description | Example |
-|--------|----------|-------------|---------|
-| `GET` | `/` | 🎨 Frontend interface | Open in browser |
-| `GET` | `/health` | 🏥 Health check | `curl http://localhost:5000/health` |
-| `GET` | `/api/quotes` | � List all quotes | `curl http://localhost:5000/api/quotes` |
-| `GET` | `/api/quotes/{id}` | 🔍 Get specific quote | `curl http://localhost:5000/api/quotes/1` |
-| `POST` | `/api/quotes` | ✨ Create new quote | `curl -X POST -H "Content-Type: application/json" -d '{"text":"Bite my shiny metal ass!","character":"Bender","episode":"Test"}' http://localhost:5000/api/quotes` |
-| `PUT` | `/api/quotes/{id}` | ✏️ Update quote | `curl -X PUT -H "Content-Type: application/json" -d '{"text":"Updated quote"}' http://localhost:5000/api/quotes/1` |
-| `DELETE` | `/api/quotes/{id}` | 🗑️ Delete quote | `curl -X DELETE http://localhost:5000/api/quotes/1` |
-
-## 🎨 Frontend Features
-
-The included frontend provides:
-
-- **Futurama-themed styling** - Dark space theme with green terminal colors
-- **Full CRUD operations** - Add, edit, update, and delete quotes
-- **Real-time updates** - Automatically refreshes the quote list
-- **Responsive design** - Works on desktop and mobile
-- **Input validation** - Client-side form validation
-- **Status messages** - User feedback for all operations
-
-## 🤖 MCP Server Tools
-
-The MCP server provides these tools for AI assistants:
-
-- **`list_quotes`** � - Get all Futurama quotes in the collection
-- **`get_quote`** 🔍 - Get details of a specific quote
-- **`create_quote`** ✨ - Add a new quote to the collection
-- **`update_quote`** ✏️ - Update an existing quote's information
-- **`delete_quote`** 🗑️ - Remove a quote from the collection
-- **`health_check`** 🏥 - Check if the API is healthy
-
-## 💡 Understanding MCP (Model Context Protocol)
-
-MCP is a protocol that allows AI assistants to interact with external services through **tools**. Think of it as a way for AI to call functions in your application from the year 3000!
-
-### 🔄 How it Works:
-
-1. **AI Assistant** wants to get Futurama quote information
-2. **MCP Server** receives the request and validates parameters
-3. **MCP Server** makes HTTP request to Flask API
-4. **Flask API** processes the request and returns data
-5. **MCP Server** formats the response for the AI
-6. **AI Assistant** receives structured data to work with
-
-### 🎯 Benefits:
-
-- **Structured Communication** - Defined interfaces between AI and services
-- **Type Safety** - Parameter validation and error handling with Pydantic
-- **Better Integration** - AI can interact with any service through MCP
-- **Standardization** - Consistent way to expose functionality to AI
-
-## 📖 Code Examples
-
-### 🌐 Using the Flask API
-
-```python
-import requests
-
-# Get all quotes
-response = requests.get('http://localhost:5000/api/quotes')
-quotes = response.json()
-print(f"Found {quotes['count']} quotes from the year 3000! �")
-
-# Create a new quote
-new_quote = {
-    "text": "I'm back, baby!",
-    "character": "Bender", 
-    "episode": "Rebirth",
-    "season": 6,
-    "year": 2010
-}
-
-response = requests.post('http://localhost:5000/api/quotes', json=new_quote)
-created_quote = response.json()
-print(f"Created: {created_quote['quote']['text']} by {created_quote['quote']['character']} ✨")
-```
-
-### 🤖 Understanding MCP Tools
-
-```python
-# This is what an MCP tool looks like:
-Tool(
-    name="create_quote",
-    description="✨ Create a new Futurama quote in the collection",
-    inputSchema={
-        "type": "object",
-        "properties": {
-            "text": {"type": "string", "description": "The quote text"},
-            "character": {"type": "string", "description": "Character who said it"},
-            "episode": {"type": "string", "description": "Episode name"}
-        },
-        "required": ["text", "character", "episode"]
+**Configuration Example with Full Path on MacOS:**
+```json
+{
+  "mcpServers": {
+    "futurama-quotes": {
+      "command": "/Users/jschroeder/Documents/code_repos/mcp-flask-crud-example/run_mcp_server.sh",
+      "args": [],
+      "env": {}
     }
-)
+  }
+}
 ```
 
-### 4. **Advanced MCP Testing**
+## 🛠️ Installation & Setup
 
-For more comprehensive testing, you can also:
+### Prerequisites
+- Python 3.8+
+- pip (Python package manager)
 
-#### **Test Integration Script:**
-Run our included integration test:
+### Automated Setup
 ```bash
-uv run python test_mcp_integration.py
+./setup.sh
 ```
 
-#### **Manual MCP Server Testing:**
-1. Start the Flask API: `uv run python futurama_api/app.py`
-2. Start the MCP server: `uv run python mcp_server/server.py`
-3. Connect your AI assistant and try commands like:
-   - "Create a quote by Amy Wong"
-   - "Update quote 3 to be more exciting"
-   - "Delete the least funny quote"
-   - "Show me all quotes by Bender"
+This script will:
+- Create a Python virtual environment
+- Install all dependencies
+- Set up the project structure
+- Provide usage instructions
 
-#### **Common AI Test Prompts:**
-```
-"Can you help me organize my Futurama quote collection? Start by showing me what's available."
-
-"I want to add some quotes from the Professor. Can you create a few new ones?"
-
-"Let's clean up the collection - can you find and update any quotes that seem incomplete?"
-
-"Show me the health status of the quotes API, then give me a random quote."
-```
-
-### 5. **Troubleshooting MCP with AI**
-
-If your AI assistant can't see the MCP tools:
-- ✅ Ensure both Flask API and MCP server are running
-- ✅ Check the configuration file path is correct
-- ✅ Restart your AI assistant after configuration changes
-- ✅ Verify the MCP server logs show "MCP server is starting up!"
-
-## 🧪 Running Tests
-
-```bash
-# Run all tests
-uv run pytest tests/ -v
-
-# Run tests with coverage
-uv run pytest tests/ --cov=futurama_api --cov=mcp_server
-
-# Run only API tests
-uv run pytest tests/tests_test_api.py -v
-
-# Run in watch mode during development
-uv run pytest tests/ --watch
-```
-
-## 🛠️ Development
-
-### Code Quality Tools
-
-The project includes modern Python development tools:
-
-```bash
-# Format code with Black
-uv run black futurama_api/ mcp_server/ tests/
-
-# Lint with Ruff
-uv run ruff check futurama_api/ mcp_server/ tests/
-
-# Type checking with MyPy
-uv run mypy futurama_api/ mcp_server/
-
-# Install pre-commit hooks
-uv run pre-commit install
-```
-
-### Adding Dependencies
-
-```bash
-# Add a new dependency
-uv add requests
-
-# Add a development dependency
-uv add --dev pytest-cov
-
-# Remove a dependency
-uv remove requests
-```
-
-## 🛠️ Development Tips
-
-## 🐛 Common Issues & Solutions
-
-1. **Port Already in Use** 🚫
+### Manual Setup
+1. **Create virtual environment:**
    ```bash
-   # Find process using port 5000
-   lsof -i :5000
-   # Kill the process
-   kill -9 <PID>
+   python -m venv .venv
+   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
    ```
 
-2. **MCP Server Can't Connect** 🔌
-   - Make sure Flask API is running first
-   - Check the API URL in `mcp_server/server.py`
-   - Verify port 5000 is accessible
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-3. **Import Errors** 📦
-   - Ensure UV virtual environment is activated: `uv shell`
-   - Reinstall dependencies: `uv sync`
+3. **Verify installation:**
+   ```bash
+   python -c "import flask, mcp, httpx; print('All dependencies installed!')"
+   ```
 
-## ✨ Sample Quotes Included
+## 💡 Usage Examples
 
-The API comes pre-loaded with classic Futurama quotes:
+### Using the REST API directly
 
-- "Bite my shiny metal ass!" - Bender
-- "Good news everyone!" - Professor Farnsworth  
-- "Shut up and take my money!" - Fry
-- "Why not Zoidberg?" - Dr. Zoidberg
-- "I'm going to build my own theme park, with blackjack and hookers!" - Bender
+```bash
+# Get all quotes
+curl http://localhost:5000/api/quotes
 
-## 📚 Learning Resources
+# Get specific quote
+curl http://localhost:5000/api/quotes/1
 
-- **Flask Documentation** - https://flask.palletsprojects.com/
-- **MCP Specification** - https://spec.modelcontextprotocol.io/
-- **UV Documentation** - https://docs.astral.sh/uv/
-- **REST API Best Practices** - https://restfulapi.net/
-- **Python Type Hints** - https://docs.python.org/3/library/typing.html
-- **Pydantic Validation** - https://docs.pydantic.dev/
+# Create new quote
+curl -X POST http://localhost:5000/api/quotes \
+  -H "Content-Type: application/json" \
+  -d '{"text":"New quote","character":"Fry","episode":"Test Episode"}'
+
+# Update quote
+curl -X PUT http://localhost:5000/api/quotes/1 \
+  -H "Content-Type: application/json" \
+  -d '{"text":"Updated quote text"}'
+
+# Delete quote
+curl -X DELETE http://localhost:5000/api/quotes/1
+```
+
+### Using with AI Assistants
+
+Once the MCP server is running, AI assistants can use natural language to interact with your quotes:
+
+- "Show me all Futurama quotes"
+- "Create a new quote by Bender"
+- "Update quote 3 to have different text"
+- "Delete quote 2"
+
+## 🔧 Development
+
+### Running in Development Mode
+
+1. **Start Flask API (with auto-reload):**
+   ```bash
+   cd futurama_api
+   python app.py
+   ```
+
+2. **Start MCP Server:**
+   ```bash
+   ./run_mcp_server.sh
+   ```
+
+### Project Dependencies
+
+- **Flask 3.0+**: Web framework for the REST API
+- **Flask-CORS 4.0+**: Cross-origin resource sharing support
+- **MCP 1.0+**: Model Context Protocol server implementation
+- **httpx 0.27+**: Async HTTP client for MCP server
+
+### Adding New Features
+
+1. **Add API endpoints** in `futurama_api/app.py`
+2. **Add corresponding MCP tools** in `mcp_server/server.py`
+3. **Update documentation** in this README
+4. **Test thoroughly** with both REST and MCP interfaces
 
 ## 🤝 Contributing
 
-Found a bug? Want to add features? Contributions welcome! 
-
 1. Fork the repository
-2. Create a feature branch: `git checkout -b feature-name`
-3. Make your changes and add tests
-4. Run tests: `uv run pytest`
-5. Format code: `uv run black .`
-6. Submit a pull request! 🚀
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-## 📄 License
+## 📝 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🎉 Acknowledgments
+## 🙏 Acknowledgments
 
-- Built with ❤️ for learning and teaching
-- Inspired by the amazing show Futurama
-- Perfect for developers learning modern Python development! 🌟
-- Uses UV for fast, reliable dependency management
-- Demonstrates professional Python project structure
+- **Futurama** for the hilarious quotes
+- **Flask** team for the excellent web framework
+- **MCP Protocol** for enabling AI integration
+- **GitHub Copilot** for development assistance
 
 ---
 
-**Good news everyone! Happy Coding from the year 3000!** 🚀�🤖
-
-If you have questions or need help, feel free to open an issue or reach out!
-
-*"Bite my shiny metal API!"* - Bender 🤖
+*"Good news everyone! Your quotes are now AI-accessible!"* - Professor Farnsworth
