@@ -1,0 +1,2122 @@
+{
+  "metadata": {
+    "total_quotes": 263,
+    "characters": {
+      "Bender": 134,
+      "Fry": 59,
+      "Leela": 20,
+      "Professor": 34,
+      "Zapp": 14,
+      "Hermes": 1,
+      "Zoidberg": 1
+    },
+    "source_file": "futurama_quotes.txt",
+    "generated_by": "convert_to_json.py"
+  },
+  "quotes": [
+    {
+      "text": "001100010010011110100001101101110011",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 1
+    },
+    {
+      "text": "Awwww, its anus looks like an asterisk!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 2
+    },
+    {
+      "text": "Ah, computer dating. It's like pimping, but you rarely have to use the phrase 'upside your head'.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 3
+    },
+    {
+      "text": "And the awkward meter goes up another notch. Ding-ding-ding-ding.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 4
+    },
+    {
+      "text": "Are all the tests gonna involve drinking?",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 5
+    },
+    {
+      "text": "Behold, the internet.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 6
+    },
+    {
+      "text": "Bender knows love, and love doesn't share itself with the world. Love is suspicious, love is needy. Love is fearful, love is greedy. My friends, there is no great love without great jealousy! I love you meatbags!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 7
+    },
+    {
+      "text": "Bender must be stoped!  I've gone too far!  Who does that guy think I am!?",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 8
+    },
+    {
+      "text": "Bite my shiny metal ass.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 9
+    },
+    {
+      "text": "Dumb-Dumb away!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 10
+    },
+    {
+      "text": "Emotions are dumb and should be hated.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 11
+    },
+    {
+      "text": "Finally, we made it out of that godforsaken cave! So what's the fastest way home, back through the cave?",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 12
+    },
+    {
+      "text": "Fry! Quit doing the right thing, you jerk!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 13
+    },
+    {
+      "text": "Granted, it's not on the list of approved bendables, but I'm... so... great!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 14
+    },
+    {
+      "text": "Hasta la vista, Meatbag!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 15
+    },
+    {
+      "text": "Have you ever tried just turning off the TV, sitting down with your children, and hitting them?",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 16
+    },
+    {
+      "text": "Hey, I don't tell you how to tell me what to do, so don't tell me how to do what you tell me to do!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 17
+    },
+    {
+      "text": "Hey that punk stole our hood ornament! Now no one will know we have the LX Package!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 18
+    },
+    {
+      "text": "Hey, what kinda party is this? There's no booze and only one hooker.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 19
+    },
+    {
+      "text": "Humans are dumb and they die easy.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 20
+    },
+    {
+      "text": "Humans dating robots is sick. You people wonder why I'm still single? It's 'cause all the fine robot sisters are dating humans!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 21
+    },
+    {
+      "text": "I decline the title of Iron Cook and accept the lesser title of Zinc Saucier, which I just made up. Uhh... also, comes with double prize money.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 22
+    },
+    {
+      "text": "I don't blame myself, I blame all of you!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 23
+    },
+    {
+      "text": "I guess if you want children beaten, you have to do it yourself.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 24
+    },
+    {
+      "text": "I'm Bender, please insert liquor!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 25
+    },
+    {
+      "text": "I love this planet! I've got wealth, fame, and access to the depths of sleaze that those things bring.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 26
+    },
+    {
+      "text": "I'm sorry, guys. I never meant to hurt you. Just to destroy everything you ever believed in.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 27
+    },
+    {
+      "text": "Interesting. No, wait, the other thing; tedious.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 28
+    },
+    {
+      "text": "Into the breach meatbags...or not. Whatever.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 29
+    },
+    {
+      "text": "I support and oppose many things, but not strongly enough to pick up a pen.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 30
+    },
+    {
+      "text": "It's not all about money; although I would like much much more.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 31
+    },
+    {
+      "text": "It's not on the list of approved bendable materials but...  I'm...  the...  greatest!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 32
+    },
+    {
+      "text": "I was having a Martini drinking contest with the autopilot.  I would have had him this time but we ran out of olives.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 33
+    },
+    {
+      "text": "Just once I'd like to eat dinner with a celebrity who isn't bound and gagged.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 34
+    },
+    {
+      "text": "Nailed it!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 35
+    },
+    {
+      "text": "No, he's not a zombie. But I don't want people to think I'm incompetent, so I'd better kill you just to be sure.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 36
+    },
+    {
+      "text": "No. I'm going to be a stalker.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 37
+    },
+    {
+      "text": "No! I want to live! There's still too many things I don't own!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 38
+    },
+    {
+      "text": "No, that's a hobo and a rabbit, but they're making a hobbit.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 39
+    },
+    {
+      "text": "Of all the friends I've had... you're the first.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 40
+    },
+    {
+      "text": "Robot 1-X, save my friends! And Zoidberg!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 41
+    },
+    {
+      "text": "Sweet photons. I don't know if you're waves or particles, but you go down smooth!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 42
+    },
+    {
+      "text": "Then a damned army we shall have!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 43
+    },
+    {
+      "text": "There's gas in our ass!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 44
+    },
+    {
+      "text": "This is the worst kind of discrimination; the kind against me!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 45
+    },
+    {
+      "text": "Watcha doin', mini-meatbags? Underage gambling? Shame on you. Count me in",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 46
+    },
+    {
+      "text": "Well if the League of Robots isn't real, how come I had a whole sticker-book of 'em when I was younger? Answer that with your precious logic!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 47
+    },
+    {
+      "text": "Well, we're boned!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 48
+    },
+    {
+      "text": "While I was hacking off the Professor's hand with an extremely dull saw, I had time to think. Who could use a doomsday device more, the scammers, or me, Bender? After several minutes of steady sawing, I had the answer. Me, Bender!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 49
+    },
+    {
+      "text": "You may have to 'metaphorically' make a deal with the 'devil.' And by 'devil,' I mean Robot Devil. And by 'metaphorically,' I mean get your coat.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 50
+    },
+    {
+      "text": "Your best is an idiot!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 51
+    },
+    {
+      "text": "Bigfoot! He's real! I knew it! The Loch Ness Monster's book was right!",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 52
+    },
+    {
+      "text": "I didn't ask for a completely reasonable excuse! I asked you to get busy!",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 53
+    },
+    {
+      "text": "It's like a party in my mouth and everybody's throwing up!",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 54
+    },
+    {
+      "text": "My God, it's full of ads!",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 55
+    },
+    {
+      "text": "There's so many killbots behind us, I can't count them all. Three, I think.",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 56
+    },
+    {
+      "text": "They're like sex, except I'm having them!",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 57
+    },
+    {
+      "text": "We're in the middle of nowhere, which is the safest part of nowhere.",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 58
+    },
+    {
+      "text": "When will young people learn that playing 'Dungeons and Dragons' doesn't make you cool!",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 59
+    },
+    {
+      "text": "Why am I sticky and naked? Did I miss something fun?",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 60
+    },
+    {
+      "text": "Wow! A superpowers drug you can just rub onto your skin? You'd think it would be something you'd have to freebase.",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 61
+    },
+    {
+      "text": "Wow, you got that off the Internet? In my day, the Internet was only used to download pornography.",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 62
+    },
+    {
+      "text": "Bender, this is Fry's decision... and he made it wrong. So it's time for us to interfere in his life.",
+      "character": "Leela",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 63
+    },
+    {
+      "text": "With my Oxo Goodgrips cheese knife, I stab at thee!",
+      "character": "Leela",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 64
+    },
+    {
+      "text": "I usually try to keep my sadness pent up inside where it can fester quietly as a mental illness.",
+      "character": "Leela",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 65
+    },
+    {
+      "text": "I was having the most wonderful dream. Except you were there, and you were there, and you were there!",
+      "character": "Leela",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 66
+    },
+    {
+      "text": "That's not a career, more of a felony.",
+      "character": "Leela",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 67
+    },
+    {
+      "text": "That's not a warning! A warning's supposed come before something bad happens.",
+      "character": "Leela",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 68
+    },
+    {
+      "text": "This is my first visit to the Galaxy of Terror and I'd like it to be a pleasant one.",
+      "character": "Leela",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 69
+    },
+    {
+      "text": "This isn't heaven! It just looks exactly like it and makes us immortal! Which I find suspicious.",
+      "character": "Leela",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 70
+    },
+    {
+      "text": "Unit 10 - Target H, 16K - niner, niner! Go left - I mean right!",
+      "character": "Leela",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 71
+    },
+    {
+      "text": "What is the secret of time travel doing on Fry's ass?",
+      "character": "Leela",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 72
+    },
+    {
+      "text": "Bender! Stop killing for a minute!",
+      "character": "Professor",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 73
+    },
+    {
+      "text": "Because your apartment smells like Polygrip and cat pee!",
+      "character": "Professor",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 74
+    },
+    {
+      "text": "Amy, technology isn't intrinsically good or evil. It's how it's used, like the death ray.",
+      "character": "Professor",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 75
+    },
+    {
+      "text": "Just slow it down, I'll shoot Hitler out the window. Darn, I hit Eleanor Roosevelt by mistake!",
+      "character": "Professor",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 76
+    },
+    {
+      "text": "Just 'cause I'm stupider than them, they think they're smarter than me!",
+      "character": "Professor",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 77
+    },
+    {
+      "text": "Dear God, they'll be killed on our doorstep! And there's no trash pickup until January 3rd.",
+      "character": "Professor",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 78
+    },
+    {
+      "text": "Doomsday device? Ah, now the ball's in Farnsworth's court! I suppose I could part with one and still be feared…",
+      "character": "Professor",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 79
+    },
+    {
+      "text": "Everybody out of the conference room! I'm calling a conference!",
+      "character": "Professor",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 80
+    },
+    {
+      "text": "Goodbye, cruel world. Goodbye, cruel lamp. Goodbye, cruel velvet drapes, lined with what would appear to be some sort of cruel muslin and the cute little pom-pom curtain pull cords. Cruel though they may be...",
+      "character": "Professor",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 81
+    },
+    {
+      "text": "Good God! Just knowing we're in the same genus makes me embarrassed to call myself homo!",
+      "character": "Professor",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 82
+    },
+    {
+      "text": "Good news, everyone! I've taught the toaster to feel love!",
+      "character": "Professor",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 83
+    },
+    {
+      "text": "Good news, everyone! There's a report on TV with some very bad news!",
+      "character": "Professor",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 84
+    },
+    {
+      "text": "I am calling a mandatory company meeting. To the mandatorium!",
+      "character": "Professor",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 85
+    },
+    {
+      "text": "I can wire anything directly into anything - I'm the professor!",
+      "character": "Professor",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 86
+    },
+    {
+      "text": "I'm sciencing as fast as I can!",
+      "character": "Professor",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 87
+    },
+    {
+      "text": "I've got to find a way to escape the horrible ravages of youth. Suddenly, I'm going to the bathroom like clockwork, every three hours. And those jerks at Social Security stopped sending me checks. Now I have to pay them!",
+      "character": "Professor",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 88
+    },
+    {
+      "text": "Less invasions, more equations!",
+      "character": "Professor",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 89
+    },
+    {
+      "text": "Nothing is impossible. Not if you can imagine it. That's what being a scientist is all about.",
+      "character": "Professor",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 90
+    },
+    {
+      "text": "Now I've often said 'Good news' when sending you on a mission of extreme danger. So when I say this anomaly is dangerous, you can imagine how dangerous I really think it is.",
+      "character": "Professor",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 91
+    },
+    {
+      "text": "Now, now. Perfectly symmetrical violence never solved anything.",
+      "character": "Professor",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 92
+    },
+    {
+      "text": "Of course Fry, show me where on this anatomically correct doll where he touched you.",
+      "character": "Professor",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 93
+    },
+    {
+      "text": "Oh dear! She's stuck in an infinite loop, and he's an idiot! Well, that's love for you.",
+      "character": "Professor",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 94
+    },
+    {
+      "text": "Oh, dreadfully real. If you die here you'll really be dead. But instead of science we believe in crazy hocus pocus. It's sort of like Kansas.",
+      "character": "Professor",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 95
+    },
+    {
+      "text": "Oh, I always feared he might run off like this. Why, why, why didn't I break his legs?",
+      "character": "Professor",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 96
+    },
+    {
+      "text": "Oh, I don't have time for this. I have to go and buy a single piece of fruit with a coupon and then return it, making people wait behind me while I complain.",
+      "character": "Professor",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 97
+    },
+    {
+      "text": "Oh, I never knew how much I'd miss him until he was gone! Not that much, as it turns out.",
+      "character": "Professor",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 98
+    },
+    {
+      "text": "That proves nothing! And furthermore, you'd think I could remember a thing like that; plus, who are you anyway?",
+      "character": "Professor",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 99
+    },
+    {
+      "text": "There's just one little problem, and it's a big one.",
+      "character": "Professor",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 100
+    },
+    {
+      "text": "There's one way and only one way to determine if an animal is intelligent. Dissect its brain!",
+      "character": "Professor",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 101
+    },
+    {
+      "text": "To better understand the anomaly, I will test its effects on this Giant Medium-Sized Ant.",
+      "character": "Professor",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 102
+    },
+    {
+      "text": "Well, then good news! It's a suppository.",
+      "character": "Professor",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 103
+    },
+    {
+      "text": "Who did this? Answer now or be punished.",
+      "character": "Professor",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 104
+    },
+    {
+      "text": "Yes, it's the apocalypse all right. I always thought I'd have a hand in it.",
+      "character": "Professor",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 105
+    },
+    {
+      "text": "Your squad sucks bosons! My team is twice as qualified and three times as expendable!",
+      "character": "Professor",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 106
+    },
+    {
+      "text": "All good things must come to an end; preferably in a humongous explosion.",
+      "character": "Zapp",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 107
+    },
+    {
+      "text": "Oh yea, bathtub minestrone.",
+      "character": "Zapp",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 108
+    },
+    {
+      "text": "Bender here has identified the femdito commander as my ex-lover, Turanga Leela, whom I once made love at.",
+      "character": "Zapp",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 109
+    },
+    {
+      "text": "Ever since man first left his cave and met a stranger with a different language and a new way of looking at things, the human race has had a dream; to kill him, so we don't have to learn his language or his new way of looking at things.",
+      "character": "Zapp",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 110
+    },
+    {
+      "text": "I am the man with no name, Zapp Brannigan!",
+      "character": "Zapp",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 111
+    },
+    {
+      "text": "Ladies, you're under arrest. Prepare to be boarded again and again.",
+      "character": "Zapp",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 112
+    },
+    {
+      "text": "Me like snu-snu!",
+      "character": "Zapp",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 113
+    },
+    {
+      "text": "My bloodhound-like instincts must have hunted them down while my other parts were throbbing to Duran Duran.",
+      "character": "Zapp",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 114
+    },
+    {
+      "text": "Same speed ahead!",
+      "character": "Zapp",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 115
+    },
+    {
+      "text": "Something is very wrong here. And yet, a bit right.",
+      "character": "Zapp",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 116
+    },
+    {
+      "text": "Spare me your space age technobabble, Attila the Hun!",
+      "character": "Zapp",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 117
+    },
+    {
+      "text": "The alien mothership is in orbit here. If we can hit that bullseye, the rest of the dominoes will fall like a house of cards. Checkmate.",
+      "character": "Zapp",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 118
+    },
+    {
+      "text": "We fight this battle not for ourselves, but for our children, and our children's children, which is why I'm forming a children's brigade.",
+      "character": "Zapp",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 119
+    },
+    {
+      "text": "We need rest. The spirit is willing, but the flesh is spongy and bruised.",
+      "character": "Zapp",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 120
+    },
+    {
+      "text": "Ah crap, I'm some sort of robot!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 121
+    },
+    {
+      "text": "Ahhh, functional.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 122
+    },
+    {
+      "text": "Alright! Closure!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 123
+    },
+    {
+      "text": "And I bet it's gonna get a lot more confusing.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 124
+    },
+    {
+      "text": "An upgrade? I thought we all agreed I was perfect.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 125
+    },
+    {
+      "text": "Are you familiar with the old robot saying \"does not compute\"?",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 126
+    },
+    {
+      "text": "A woman like that you gotta romance first!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 127
+    },
+    {
+      "text": "Aw, this bends!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 128
+    },
+    {
+      "text": "Bender knows when to use finesse.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 129
+    },
+    {
+      "text": "Bender's a genius!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 130
+    },
+    {
+      "text": "Bite my shiny, metal ass!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 131
+    },
+    {
+      "text": "Boy, were we suckers!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 132
+    },
+    {
+      "text": "Boy, who knew a cooler could also make a handy wang coffin?",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 133
+    },
+    {
+      "text": "But-- those girls don't wear cases! You can see their bare circuits!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 134
+    },
+    {
+      "text": "Care to contribute to the Anti-Mugging-You Fund?",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 135
+    },
+    {
+      "text": "Comedy's a dead art form. Now tragedy -- THAT'S funny.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 136
+    },
+    {
+      "text": "Crippling pain? That's not covered by my insurance fraud.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 137
+    },
+    {
+      "text": "Curse my natural showmanship!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 138
+    },
+    {
+      "text": "Curse you, merciful Poseidon!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 139
+    },
+    {
+      "text": "Down with Bender!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 140
+    },
+    {
+      "text": "Emotions are dumb and should be hated.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 141
+    },
+    {
+      "text": "Farewell, big blue ball of idiots!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 142
+    },
+    {
+      "text": "Fathero!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 143
+    },
+    {
+      "text": "Float like a floatbox, sting like an automatic stingin' machine.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 144
+    },
+    {
+      "text": "Fry, of all the friends I've had ... you're the first.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 145
+    },
+    {
+      "text": "Gimme your biggest, strongest, cheapest drink.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 146
+    },
+    {
+      "text": "Hey Fry, I'm steering with my ass!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 147
+    },
+    {
+      "text": "Hooray, we don't have to do anything!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 148
+    },
+    {
+      "text": "I am a hideous triumph of form and function.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 149
+    },
+    {
+      "text": "I choose to not understand these signs!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 150
+    },
+    {
+      "text": "I hate people who love me. And they hate me.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 151
+    },
+    {
+      "text": "I'm a fraud. A poor, lazy, sexy fraud.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 152
+    },
+    {
+      "text": "I'm an outdated piece of junk.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 153
+    },
+    {
+      "text": "I'm not allowed to sing. Court order.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 154
+    },
+    {
+      "text": "I'm one of those lazy, homeless bums I've been hearing about.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 155
+    },
+    {
+      "text": "I'm so embarrassed. I wish everybody else was dead.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 156
+    },
+    {
+      "text": "I'm tired of this room and everyone in it!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 157
+    },
+    {
+      "text": "In the event of an emergency, my ass can be used as a flotation device.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 158
+    },
+    {
+      "text": "I only know enough binary to ask where the bathroom is.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 159
+    },
+    {
+      "text": "I only speak enough binary to ask where the bathroom is.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 160
+    },
+    {
+      "text": "I've gone too far! Who does that guy think I am?",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 161
+    },
+    {
+      "text": "Let's commence preparations for rumbling!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 162
+    },
+    {
+      "text": "Lick my frozen, metal ass!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 163
+    },
+    {
+      "text": "Life is hilariously cruel.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 164
+    },
+    {
+      "text": "Like most of life's problems, this one can be solved with bending.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 165
+    },
+    {
+      "text": "Listen up, cause I got a climactic speech.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 166
+    },
+    {
+      "text": "My full name is Bender Bending Rodriguez.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 167
+    },
+    {
+      "text": "My life, and by extension everyone else's, is meaningless.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 168
+    },
+    {
+      "text": "nogoodlawsprotectingtheinnocent--",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 169
+    },
+    {
+      "text": "Nothing like a warm fire and a super-soaker of fine cognac.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 170
+    },
+    {
+      "text": "Now that's hospital dancing.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 171
+    },
+    {
+      "text": "Oh no! Not the magnet!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 172
+    },
+    {
+      "text": "Oh, so, just 'cause a robot wants to kill humans that makes him a radical?",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 173
+    },
+    {
+      "text": "OK, but I don't want anyone thinking we're robosexuals.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 174
+    },
+    {
+      "text": "Professor! Make a woman out of me!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 175
+    },
+    {
+      "text": "Senseless death! The folk singer's best friend!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 176
+    },
+    {
+      "text": "Shooting DNA at each other to make babies. I find it offensive!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 177
+    },
+    {
+      "text": "Since I love you all so much, I'd like to give everyone hugs.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 178
+    },
+    {
+      "text": "Stop doing the right thing, you jerk!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 179
+    },
+    {
+      "text": "Stupid anti-pimping laws!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 180
+    },
+    {
+      "text": "That's not my gold-plated 25-pin connector.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 181
+    },
+    {
+      "text": "The laws of science be a harsh mistress.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 182
+    },
+    {
+      "text": "The modern world can bite my splintery, wooden ass!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 183
+    },
+    {
+      "text": "There! That oughtta convert a few tailgaters.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 184
+    },
+    {
+      "text": "The sparks keep me warm.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 185
+    },
+    {
+      "text": "They're tormenting me with uptempo singing and dancing!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 186
+    },
+    {
+      "text": "This guy's not making any sense. Can I kill him? Please?",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 187
+    },
+    {
+      "text": "Try this, kids at home!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 188
+    },
+    {
+      "text": "Wait! My cheating unit malfunctioned! You gotta give me a do-over!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 189
+    },
+    {
+      "text": "Want me to smack the corpse around a little?",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 190
+    },
+    {
+      "text": "Well I don't have anything else planned for today, let's get drunk!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 191
+    },
+    {
+      "text": "We're both expressible as the sum of two cubes!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 192
+    },
+    {
+      "text": "Whaddya say, folks? Hot or not?",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 193
+    },
+    {
+      "text": "When will man learn that all races are equally inferior to robots?",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 194
+    },
+    {
+      "text": "Whoever's directing this is a master of suspense!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 195
+    },
+    {
+      "text": "Why would God think in binary?",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 196
+    },
+    {
+      "text": "Woohoo, I'm popular!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 197
+    },
+    {
+      "text": "Would we have donkeys?",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 198
+    },
+    {
+      "text": "Yes! I got the most! I win X-Mas!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 199
+    },
+    {
+      "text": "You can't count on God for jack! He pretty much told me so himself.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 200
+    },
+    {
+      "text": "You just lost five dollars.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 201
+    },
+    {
+      "text": "Haha, you humans and your organs. One little stab to the goo, and grrrrsplttt!",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 202
+    },
+    {
+      "text": "But this is HDTV. It's got better resolution than the real world.",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 203
+    },
+    {
+      "text": "Can I pull up my pants now?",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 204
+    },
+    {
+      "text": "Existing is basically all I do!",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 205
+    },
+    {
+      "text": "Hey look, it's that guy you are!",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 206
+    },
+    {
+      "text": "Hooray, we don't have to do anything!",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 207
+    },
+    {
+      "text": "How about me? I'm human, and I've always wanted to see the future!",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 208
+    },
+    {
+      "text": "How can I live my life if I can't tell good from evil?",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 209
+    },
+    {
+      "text": "I can burp the alphabet. A, B, D ... no, wait ...",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 210
+    },
+    {
+      "text": "I did it! And it's all thanks to the books at my local library.",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 211
+    },
+    {
+      "text": "I don't regret this, but I both rue and lament it.",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 212
+    },
+    {
+      "text": "I have more important things to do today than laugh and clap my hands.",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 213
+    },
+    {
+      "text": "I haven't had time off since I was twenty-one through twenty-four.",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 214
+    },
+    {
+      "text": "I'll be whatever I wanna do.",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 215
+    },
+    {
+      "text": "I'm going to continue never washing this cheek again.",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 216
+    },
+    {
+      "text": "I'm gonna be a science fiction hero, just like Uhura, or Captain Janeway, or Xena!",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 217
+    },
+    {
+      "text": "I'm literally angry with rage!",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 218
+    },
+    {
+      "text": "I'm never gonna get used to the thirty-first century. Caffeinated bacon?",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 219
+    },
+    {
+      "text": "I'm not a robot like you -- I don't like having disks crammed into me. Unless they're Oreos. And then only in the mouth.",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 220
+    },
+    {
+      "text": "I must be a robot. Why else would human women refuse to date me?",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 221
+    },
+    {
+      "text": "I refuse to testify on the grounds that my organs will be chopped up into a patty.",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 222
+    },
+    {
+      "text": "It's all there, in the macaroni.",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 223
+    },
+    {
+      "text": "It's a widely-believed fact!",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 224
+    },
+    {
+      "text": "It's like a party in my mouth and everyone's throwing up.",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 225
+    },
+    {
+      "text": "Leela, Bender, we're going grave-robbing.",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 226
+    },
+    {
+      "text": "Leela, there's nothing wrong with anything.",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 227
+    },
+    {
+      "text": "Make up some feelings and tell her you have them.",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 228
+    },
+    {
+      "text": "My hands! My horrible, human hands!",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 229
+    },
+    {
+      "text": "No, no, I was just picking my nose.",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 230
+    },
+    {
+      "text": "People said I was dumb but I proved them!",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 231
+    },
+    {
+      "text": "Please, Mr. Nixon! We're appealing to your sense of decency!",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 232
+    },
+    {
+      "text": "Prepare to be thought at!",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 233
+    },
+    {
+      "text": "Robots don't go to heaven.",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 234
+    },
+    {
+      "text": "Stop abducting me!",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 235
+    },
+    {
+      "text": "Sweet justice! Sweet, juicy justice!",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 236
+    },
+    {
+      "text": "That doesn't look like an \"L\", unless you count lower case.",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 237
+    },
+    {
+      "text": "That's a chick show. I prefer programs of the genre World's Blankiest Blank.",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 238
+    },
+    {
+      "text": "The butter in my pocket is melting!",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 239
+    },
+    {
+      "text": "The less fortunate get all the breaks!",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 240
+    },
+    {
+      "text": "There's a lot about my face you don't know.",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 241
+    },
+    {
+      "text": "There's a political debate on. Quick, change the channel!",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 242
+    },
+    {
+      "text": "These new hands are great. I'm gonna break them in tonight.",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 243
+    },
+    {
+      "text": "The spoon's in the foot powder.",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 244
+    },
+    {
+      "text": "They're great! They're like sex except I'm having them.",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 245
+    },
+    {
+      "text": "What kind of bozos would start a Bender protest group?",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 246
+    },
+    {
+      "text": "Where's Captain Bender? Off catastrophizing some other planet?",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 247
+    },
+    {
+      "text": "Why use my own legs like an idiot when I can use a Chickenwalker?",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 248
+    },
+    {
+      "text": "You'll barely regret this.",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 249
+    },
+    {
+      "text": "You mean Bender is the evil Bender? I'm shocked! Shocked! Well not that shocked.",
+      "character": "Fry",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 250
+    },
+    {
+      "text": "Without my body, I'm a nobody.",
+      "character": "Hermes",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 251
+    },
+    {
+      "text": "Do you have idiots on your planet?",
+      "character": "Leela",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 252
+    },
+    {
+      "text": "He opened up relations with China. He doesn't want to hear about your ding-dong.",
+      "character": "Leela",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 253
+    },
+    {
+      "text": "I'm a millionaire! Suddenly I have an opinion about the capital gains tax.",
+      "character": "Leela",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 254
+    },
+    {
+      "text": "My old life wasn't as glamorous as my webpage made it look.",
+      "character": "Leela",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 255
+    },
+    {
+      "text": "No, Leela will show you out.",
+      "character": "Leela",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 256
+    },
+    {
+      "text": "There's a political debate on. Quick, change the channel!",
+      "character": "Leela",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 257
+    },
+    {
+      "text": "This is by a wide margin the least likely thing that has ever happened.",
+      "character": "Leela",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 258
+    },
+    {
+      "text": "This toads the wet sprocket.",
+      "character": "Leela",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 259
+    },
+    {
+      "text": "This wangs chung.",
+      "character": "Leela",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 260
+    },
+    {
+      "text": "You did the best you could, I guess, and some of these gorillas are okay.",
+      "character": "Leela",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 261
+    },
+    {
+      "text": "My name isn't Slick, it's Zoidberg. John fucking Zoidberg!!",
+      "character": "Zoidberg",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 262
+    },
+    {
+      "text": "Yea, I was God once.",
+      "character": "Bender",
+      "episode": "Unknown",
+      "season": null,
+      "year": null,
+      "source_line": 263
+    }
+  ]
+}

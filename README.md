@@ -2,11 +2,13 @@
 
 A complete CRUD application featuring a Flask REST API for managing Futurama quotes and an MCP (Model Context Protocol) server that provides AI-friendly access to the API.
 
+**🎯 Ready to use!** Includes 263+ Futurama quotes that load automatically - no setup required!
+
 ## 🚀 Features
 
 - **RESTful Flask API** with full CRUD operations
 - **MCP Server** for AI assistant integration
-- **In-memory data storage** with sample Futurama quotes
+- **Auto-loading quotes** from JSON file at startup (263+ Futurama quotes included!)
 - **CORS enabled** for frontend integration
 - **Comprehensive error handling** and logging
 - **Docker-ready** setup scripts
@@ -35,6 +37,7 @@ A complete CRUD application featuring a Flask REST API for managing Futurama quo
    ```bash
    python futurama_api/app.py
    ```
+   The API automatically loads 263+ Futurama quotes from the included JSON file.
 
 3. **Start the MCP Server (in another terminal):**
    ```bash
@@ -47,13 +50,14 @@ A complete CRUD application featuring a Flask REST API for managing Futurama quo
    curl http://localhost:5000/api/quotes
    ```
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 mcp-flask-crud-example/
 ├── futurama_api/           # Flask REST API
 │   ├── __init__.py
-│   └── app.py             # Main Flask application
+│   ├── app.py             # Main Flask application
+│   └── futurama_quotes.json # 263+ Futurama quotes (auto-loaded)
 ├── mcp_server/            # MCP Server for AI integration
 │   ├── __init__.py
 │   └── server.py          # MCP server implementation
